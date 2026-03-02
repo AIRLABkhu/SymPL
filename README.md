@@ -1,6 +1,6 @@
 # Keep it SymPL: Symbolic Projective Layout for Allocentric Spatial Reasoning in Vision-Language Models
 
-The official implementation of "[Keep it SymPL: Symbolic Projective Layout for Allocentric Spatial Reasoning in Vision-Language Models]" (CVPR 2026).
+The official implementation of "Keep it SymPL: Symbolic Projective Layout for Allocentric Spatial Reasoning in Vision-Language Models" (CVPR 2026).
 
 <p align="center">
   <a href="https://sites.google.com/khu.ac.kr/jjy-fine/home" target="_blank"><strong>Jaeyun Jang</strong></a> ·
