@@ -22,7 +22,7 @@ Perspective-aware spatial reasoning involves understanding spatial relationships
 </p>
 
 
-![](figure/intro.png)
+![](docs/static/images/introduction.png)
 
 ## Requirements 
 
