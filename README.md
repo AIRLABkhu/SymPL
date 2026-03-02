@@ -33,7 +33,7 @@ Figure 2. Overview of SymPL framework. SymPL reformulates an allocentric questio
 ![](docs/static/images/main_table.png)
 Table 1. Quantitative results on allocentric questions. Bold indicates the best, while underline represents the second best results.
 
-![](docs/static/images/dataset_sharp_3dsrbench.png.png)
+![](docs/static/images/dataset_sharp_3dsrbench.png)
 Figure 3. Allocentric spatial reasoning examples. Qwen2.5-VL + SoM and APC-Vis exhibited limited allocentric spatial reasoning performance across various categories. In contrast, our SymPL effectively handled allocentric questions by reformulating them into symbolic layout questions.
 ## Installation
 
