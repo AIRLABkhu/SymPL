@@ -56,7 +56,7 @@ pip install -r setup/requirements.txt
 
 ## 🚀 Getting started
 You can run the project using run_simple.py.
-Within this file, you can modify the input image and the prompt as needed.
+Within this file, you can modify the input image, prompt and save path as needed.
 ```
 python run_sympl.py
 ```
