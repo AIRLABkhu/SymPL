@@ -24,59 +24,46 @@ Perspective-aware spatial reasoning involves understanding spatial relationships
 
 ![](docs/static/images/introduction.png)
 
-## Figures 
+## Main Framework
+
+![](docs/static/images/main_figure.png)
 
 ## Main Results
 
+![](docs/static/images/main_table.png)
+
 ## Installation
 
+#### Enviroments:
+
+- Python 3.10
+- Pytorch 2.4.1
+- Torchvision 0.19.1
+
+#### Install vision modules and other requirements
+```
+# install vision module dependencies & download checkpoints
+bash setup/setup_vision_modules.sh
+
+# install other dependencies
+pip install -r setup/requirements.txt
+```
+
 ## Usage
+You can run the project using run_simple.py.
+Within this file, you can modify the input image and the prompt as needed.
+```
+python run_sympl.py
+```
+## Citation
 
-## Inference
-To run inference on an RGB and create 3D strands use:
+You can cite our work by BiBTex.
 
-    $ ./inference_difflocks.py \
-		--img_path=./samples/medium_11.png \
-		--out_path=./outputs_inference/ 
-
-You also have options to export a `.blend` file and an alembic file by specifying `--blender_path` and `--export_alembic` in the above script. 
-Note that the blender path corresponds to the blender executable with version 4.1.1. It will likely not work with other versions. 
-
-	
-## Train StrandVAE 
-To train the strandVAE model: 
-
-	$ ./train_strandsVAE.py --dataset_path=<DATASET_PATH> --exp_info=<EXP_NAME>
-
-it will start training and outputting tensorboard logs in `./tensorboard_logs`
-
-
-## Train DiffLocks diffusion model 
-To train the diffusion model: 
-
-	$ ./train_scalp_diffusion.py \
-		--config ./configs/config_scalp_texture_conditional.json \
-		--batch-size 4 \
-		--grad-accum-steps 4 \
-		--mixed-precision bf16 \
-		--use-tensorboard \
-		--save-checkpoints \
-		--save-every 100000 \
-		--compile \
-		--dataset_path=<DATASET_PATH> \
-		--dataset_processed_path=<DATASET_PATH_PROCESSED>
-		--name <EXP_NAME> 
-
-it will start training and outputting tensorboard logs in `./tensorboard_logs`. 
-Start training on multiple GPUs by first running:
-
-	$ accelerate config
-
-followed by pre-pending `accelerate launch` to the previous training script:
-
-	$ accelerate launch ./train_scalp_diffusion.py \
-		--config ./configs/config_scalp_texture_conditional.json \
-		--batch-size 4 \
-		<ALL_THE_OTHER_OPTIONS_AS_SPECIFIED_ABOVE>
-
-You would probably to adjust the `batch-size` and `grad-accum-step` depending on the number of GPUs you have. 
+```bibtex
+@inproceedings{jang2026sympl,
+  title={Keep it SymPL: Symbolic Projective Layout for Allocentric Spatial Reasoning in Vision-Language Models},
+  author={Jaeyun, Jang and Seunghui, Shin and Taeho, Park and Hyoseok, Hwang},
+  year={2026},
+  url={https://arxiv.org/abs/2602.19117}
+}
+```
