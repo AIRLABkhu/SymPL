@@ -43,7 +43,7 @@ Figure 3. Allocentric spatial reasoning examples. Qwen2.5-VL + SoM and APC-Vis e
 - Pytorch 2.4.1
 - Torchvision 0.19.1
 - Torchaudio 2.4.1
-#### Install vision modules and other requirements
+#### Install vision modules and requirements
 ```
 # install vision module dependencies & download checkpoints
 bash setup/setup_vision_modules.sh
